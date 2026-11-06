@@ -5,665 +5,601 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Andrea Ariño Ruiz - 3D Character Animator with over 5 years of professional experience.">
-
-    <meta name="author" content="Andrea Ariño Ruiz">
-
     <title>Andrea Ariño Ruiz | 3D Character Animator</title>
+    <meta name="description"
+        content="Andrea Ariño Ruiz - 3D Character Animator with over 5 years of professional experience in TV series, feature films, documentaries and gameplay animation.">
+    <meta name="author" content="Andrea Ariño Ruiz">
+    <meta name="theme-color" content="#070F3A">
+
+    <!-- OPEN GRAPH (preview when sharing the link) -->
+    <meta property="og:title" content="Andrea Ariño Ruiz | 3D Character Animator">
+    <meta property="og:description" content="Demo reel, projects and contact of 3D Character Animator Andrea Ariño Ruiz.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/andrea-profile.png">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Caveat:wght@600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
+        rel="stylesheet">
 
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="css/styles.css?v=5">
+    <link rel="stylesheet" href="css/styles.css?v=8">
 
+    <!-- Marks that JS is available (enables reveal animations without hiding content if JS fails) -->
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
 
+    <a href="#main" class="skip-link" data-i18n="skip_link">Skip to content</a>
+
     <!-- =================================
          HEADER & NAVIGATION
     ================================== -->
-
-    <header class="site-header">
-
+    <header class="site-header" id="site-header">
         <div class="header-container">
 
-            <!-- BRAND / NAME -->
-            <a href="#reel" class="brand">
-                ANDREA ARIÑO RUIZ
+            <a href="#reel" class="brand" aria-label="Andrea Ariño Ruiz — home">
+                <span class="brand-mark" aria-hidden="true">A</span>
+                <span class="brand-name">Andrea Ariño Ruiz</span>
             </a>
 
-            <!-- MAIN NAVIGATION -->
-            <nav class="main-nav" aria-label="Main navigation">
-
+            <nav class="main-nav" id="main-nav" aria-label="Main navigation">
                 <a href="#reel" class="nav-link" data-i18n="nav_reel">REEL</a>
-
                 <a href="#about" class="nav-link" data-i18n="nav_about">ABOUT ME</a>
-
                 <a href="#projects" class="nav-link" data-i18n="nav_projects">PROJECTS</a>
-
                 <a href="#contact" class="nav-link" data-i18n="nav_contact">CONTACT</a>
-
             </nav>
 
-            <!-- LANGUAGE SELECTOR -->
-            <div class="language-selector" aria-label="Language selector">
+            <div class="header-actions">
+                <div class="language-selector" role="group" aria-label="Language">
+                    <button type="button" class="language-option" data-lang="es" aria-label="Español">ES</button>
+                    <button type="button" class="language-option" data-lang="en" aria-label="English">EN</button>
+                    <button type="button" class="language-option" data-lang="ca" aria-label="Català">CA</button>
+                </div>
 
-                <button type="button" class="language-option active" data-lang="es" aria-label="Español">
-                    ES
+                <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false"
+                    aria-controls="main-nav" data-i18n-aria="menu_label" aria-label="Menu">
+                    <span></span>
+                    <span></span>
                 </button>
-
-                <button type="button" class="language-option" data-lang="en" aria-label="English">
-                    EN
-                </button>
-
-                <button type="button" class="language-option" data-lang="ca" aria-label="Català">
-                    CA
-                </button>
-
             </div>
 
         </div>
-
     </header>
 
 
-    <!-- =================================
-         MAIN CONTENT
-    ================================== -->
+    <main id="main">
 
-    <main>
+        <!-- =================================
+             01. REEL / HERO
+        ================================== -->
+        <section id="reel" class="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
 
-        <!-- 01. REEL -->
-        <section id="reel" class="reel-section">
-            <div class="section-container reel-container">
+            <div class="container hero-container">
 
-                <div class="reel-heading">
+                <div class="hero-heading">
+                    <p class="hero-eyebrow reveal" data-i18n="reel_eyebrow">3D CHARACTER ANIMATOR</p>
 
-                    <p class="reel-eyebrow" data-i18n="reel_eyebrow">
-                        3D Character Animator
-                    </p>
+                    <h1 class="hero-name reveal">Andrea Ariño Ruiz<span class="hero-dot">.</span></h1>
 
-                    <h1 class="reel-name">
-                        ANDREA ARIÑO RUIZ
-                    </h1>
-
-                    <p class="reel-role" data-i18n="reel_role">
-                        DEMO REEL
-                    </p>
-
+                    <div class="hero-meta reveal">
+                        <p class="hero-location">
+                            <span class="status-dot" aria-hidden="true"></span>
+                            <span data-i18n="hero_location">Barcelona · Open to remote work</span>
+                        </p>
+                        <div class="hero-ctas">
+                            <a href="#projects" class="btn btn-primary" data-i18n="cta_projects">View projects</a>
+                            <a href="#contact" class="btn btn-ghost" data-i18n="cta_contact">Get in touch</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="reel-video">
-                    <iframe src="https://player.vimeo.com/video/534983171"
-                        title="Andrea Ariño Ruiz - 3D Character Animation Reel" frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-                    </iframe>
+                <div class="reel-block reveal">
+                    <p class="reel-label">
+                        <span data-i18n="reel_role">DEMO REEL</span>
+                        <span class="reel-arrow" aria-hidden="true">↓</span>
+                    </p>
+
+                    <div class="reel-frame">
+                        <div class="reel-video">
+                            <iframe src="https://player.vimeo.com/video/534983171?title=0&amp;byline=0&amp;portrait=0"
+                                title="Andrea Ariño Ruiz - 3D Character Animation Reel" loading="lazy"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================
+             PROJECTS STRIP
+        ================================== -->
+        <section class="studios" aria-labelledby="studios-title">
+            <p class="studios-title" id="studios-title" data-i18n="studios_title">Projects I've worked on</p>
+
+            <div class="marquee">
+                <div class="marquee-track">
+                    <ul class="marquee-group">
+                        <li>SuperThings: La película</li>
+                        <li>Lady Everest</li>
+                        <li>SuperThings Rivals of Kazoom</li>
+                        <li>Trotties</li>
+                        <li>Bea's Block</li>
+                        <li>FriendZSpace</li>
+                    </ul>
+                    <ul class="marquee-group" aria-hidden="true">
+                        <li>SuperThings: La película</li>
+                        <li>Lady Everest</li>
+                        <li>SuperThings Rivals of Kazoom</li>
+                        <li>Trotties</li>
+                        <li>Bea's Block</li>
+                        <li>FriendZSpace</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
 
-        <!-- 02. ABOUT ME -->
-        <section id="about" class="about-section">
-            <div class="section-container about-container">
+        <!-- =================================
+             02. ABOUT ME
+        ================================== -->
+        <section id="about" class="about">
+            <div class="container about-container">
 
-                <div class="about-image">
-                    <img src="assets/images/andrea-profile.png" alt="Andrea Ariño Ruiz" class="profile-photo">
+                <div class="about-media reveal">
+                    <div class="about-photo-wrap">
+                        <img src="assets/images/andrea-profile.png" alt="Andrea Ariño Ruiz" class="profile-photo"
+                            width="450" height="600" loading="lazy">
+                    </div>
+                    <div class="about-sticker" aria-hidden="true">
+                        <strong>5+</strong>
+                        <span data-i18n="sticker_years">years animating</span>
+                    </div>
                 </div>
 
                 <div class="about-content">
 
-                    <div class="about-heading">
-                        <p class="about-eyebrow" data-i18n="about_eyebrow">
-                            A little about me
-                        </p>
-                        <span class="about-line"></span>
+                    <div class="section-kicker reveal">
+                        <span class="kicker-line" aria-hidden="true"></span>
+                        <p data-i18n="about_eyebrow">A little about me</p>
                     </div>
 
-                    <h2 class="about-title">
-                        Andrea Ariño Ruiz
-                    </h2>
+                    <h2 class="about-title reveal">Andrea Ariño Ruiz</h2>
+                    <p class="about-role reveal" data-i18n="about_role">3D CHARACTER ANIMATOR</p>
 
-                    <h3 class="about-role" data-i18n="about_role">
-                        3D Character Animator
-                    </h3>
-
-                    <p class="about-highlight" data-i18n="about_highlight">
-                        Combining analytical thinking with creativity
-                        to bring characters and stories to life.
+                    <p class="about-highlight reveal" data-i18n="about_highlight">
+                        Combining analytical thinking with creativity to bring characters and stories to life.
                     </p>
 
-                    <div class="about-biography">
-
-                        <p class="about-description" data-i18n="about_paragraph_1">
+                    <div class="about-biography reveal">
+                        <p data-i18n="about_paragraph_1">
                             I'm a 3D Character Animator with over 5 years of professional experience across TV series,
                             feature films, short films, documentaries and gameplay animation.
                         </p>
-
-                        <p class="about-description" data-i18n="about_paragraph_2">
+                        <p data-i18n="about_paragraph_2">
                             Throughout my career, I've had the opportunity to work with international teams and adapt to
                             different production pipelines, workflows and animation styles. I particularly enjoy
                             character acting, dialogue shots and bringing subtle performances to life through body
                             mechanics and facial animation.
                         </p>
-
-                        <p class="about-description" data-i18n="about_paragraph_3">
+                        <p data-i18n="about_paragraph_3">
                             With a background in engineering and product development, I bring an analytical and
                             structured approach to creative work. I'm a fast learner who values collaboration,
                             continuous learning and delivering high-quality animation while meeting production
                             deadlines.
                         </p>
-
                     </div>
 
-                    <div class="about-features">
-
-                        <div class="about-feature">
-                            <img src="assets/images/icons/about-film-strip.png" class="about-feature-icon" alt=""
-                                aria-hidden="true">
-                            <span data-i18n="feature_experience">
-                                5+ years<br>in production
+                    <ul class="about-features reveal">
+                        <li class="about-feature">
+                            <span class="feature-icon-wrap">
+                                <img src="assets/images/icons/about-film-strip.png" class="about-feature-icon" alt=""
+                                    aria-hidden="true">
                             </span>
-                        </div>
-
-                        <div class="about-feature">
-                            <img src="assets/images/icons/about-rayo.png" class="about-feature-icon" alt=""
-                                aria-hidden="true">
-                            <span data-i18n="feature_acting">
-                                Character acting<br>& performance
+                            <span data-i18n-html="feature_experience">5+ years<br>in production</span>
+                        </li>
+                        <li class="about-feature">
+                            <span class="feature-icon-wrap">
+                                <img src="assets/images/icons/about-rayo.png" class="about-feature-icon" alt=""
+                                    aria-hidden="true">
                             </span>
-                        </div>
-
-                        <div class="about-feature">
-                            <img src="assets/images/icons/about-creative-approach.png" class="about-feature-icon" alt=""
-                                aria-hidden="true">
-                            <span data-i18n="feature_approach">
-                                Analytical &<br>creative approach
+                            <span data-i18n-html="feature_acting">Character acting<br>&amp; performance</span>
+                        </li>
+                        <li class="about-feature">
+                            <span class="feature-icon-wrap">
+                                <img src="assets/images/icons/about-creative-approach.png" class="about-feature-icon"
+                                    alt="" aria-hidden="true">
                             </span>
-                        </div>
-
-                    </div>
+                            <span data-i18n-html="feature_approach">Analytical &amp;<br>creative approach</span>
+                        </li>
+                    </ul>
 
                 </div>
-
             </div>
         </section>
 
-        <!-- 03. PROJECTS -->
-        <section id="projects" class="projects-section">
-            <div class="section-container">
 
-                <div class="projects-heading">
-                    <h2 class="projects-title" data-i18n="nav_projects">
-                        PROJECTS
-                    </h2>
+        <!-- =================================
+             03. PROJECTS
+        ================================== -->
+        <section id="projects" class="projects">
+            <div class="container">
+
+                <div class="projects-header">
+                    <div>
+                        <div class="section-kicker section-kicker--light reveal">
+                            <span class="kicker-line" aria-hidden="true"></span>
+                            <p data-i18n="projects_eyebrow">SELECTED WORK</p>
+                        </div>
+                        <h2 class="section-title section-title--light reveal" data-i18n="nav_projects">PROJECTS</h2>
+                    </div>
+                    <p class="projects-intro reveal" data-i18n="projects_intro">Select a poster to see the details.</p>
                 </div>
 
                 <div class="projects-grid">
 
                     <!-- 01. SUPERTHINGS: THE MOVIE -->
-                    <article class="project-card" tabindex="0" role="button" aria-label="SuperThings: La película">
+                    <article class="project-card reveal">
+                        <button type="button" class="project-trigger" aria-haspopup="dialog">
+                            <span class="project-poster">
+                                <img src="assets/images/projects/superthings-movie.jpg" alt="SuperThings: La película"
+                                    loading="lazy">
+                            </span>
+                            <span class="project-view" aria-hidden="true">+</span>
+                            <span class="project-caption">
+                                <span class="project-index">01 · <span data-i18n="cat_feature">Feature film</span></span>
+                                <span class="project-title">SuperThings: La película</span>
+                                <span class="project-studio">Keytoon Animation Studio</span>
+                            </span>
+                        </button>
 
-                        <div class="project-card-inner">
-
-                            <!-- FRONT -->
-                            <div class="project-card-front">
-                                <img src="assets/images/projects/superthings-movie.jpg" alt="SuperThings: La película">
-
-                                <div class="project-front-caption">
-                                    <span>01 / FEATURE FILM</span>
-                                    <h3>SuperThings: La película</h3>
+                        <div class="project-details" hidden>
+                            <p class="pd-category" data-i18n="cat_feature">Feature film</p>
+                            <h3 class="pd-title">SuperThings: La película</h3>
+                            <dl class="pd-meta">
+                                <div>
+                                    <dt data-i18n="label_studio">Studio</dt>
+                                    <dd>Keytoon Animation Studio</dd>
                                 </div>
-                            </div>
-
-                            <!-- BACK -->
-                            <div class="project-card-back">
-
-                                <div class="project-info">
-
-                                    <p class="project-category">FEATURE FILM</p>
-
-                                    <h3 class="project-name">
-                                        SuperThings: La película
-                                    </h3>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">STUDIO</span>
-                                        <p>Keytoon Animation Studio</p>
-                                    </div>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">ROLE</span>
-                                        <p data-i18n="project_role_animator">Character Animator</p>
-                                    </div>
-
-                                    <div class="project-description-wrapper">
-                                        <span class="project-label">ABOUT THE PROJECT</span>
-                                        <p class="project-description" data-i18n="desc_superthings_movie">
-                                            A feature-length animated adventure that brings the world of SuperThings to
-                                            the big screen. When the worlds of
-                                            Kaboom City and Normalópolis collide, a new adventure begins, bringing
-                                            heroes and villains together. I worked on
-                                            character animation for the film.
-                                        </p>
-                                    </div>
-
+                                <div>
+                                    <dt data-i18n="label_role">Role</dt>
+                                    <dd data-i18n="project_role_animator">Character Animator</dd>
                                 </div>
-
-                                <div class="project-software">
-                                    <img src="assets/logos/blender.png" alt="Blender" class="software-logo">
+                                <div>
+                                    <dt>Software</dt>
+                                    <dd><span class="software-chip"><img src="assets/logos/blender.png" alt="Blender"
+                                                class="software-logo"></span></dd>
                                 </div>
-
-                            </div>
+                            </dl>
+                            <p class="pd-label" data-i18n="label_about">About the project</p>
+                            <p class="pd-desc" data-i18n="desc_superthings_movie">
+                                A feature-length animated adventure that brings the world of SuperThings to the big
+                                screen. When the worlds of Kaboom City and Normalópolis collide, a new adventure begins,
+                                bringing heroes and villains together. I worked on character animation for the film.
+                            </p>
                         </div>
                     </article>
 
 
                     <!-- 02. LADY EVEREST -->
-                    <article class="project-card" tabindex="0" role="button" aria-label="Lady Everest">
+                    <article class="project-card project-card--contain reveal">
+                        <button type="button" class="project-trigger" aria-haspopup="dialog">
+                            <span class="project-poster">
+                                <img src="assets/images/projects/lady-everest.jpg" alt="Lady Everest" loading="lazy">
+                            </span>
+                            <span class="project-view" aria-hidden="true">+</span>
+                            <span class="project-caption">
+                                <span class="project-index">02 · <span data-i18n="cat_documentary">Documentary</span></span>
+                                <span class="project-title">Lady Everest</span>
+                                <span class="project-studio">Pixelodeon</span>
+                            </span>
+                        </button>
 
-                        <div class="project-card-inner">
-
-                            <!-- FRONT -->
-                            <div class="project-card-front">
-                                <img src="assets/images/projects/lady-everest.jpg" alt="Lady Everest">
-
-                                <div class="project-front-caption">
-                                    <span>02 / DOCUMENTARY</span>
-                                    <h3>Lady Everest</h3>
+                        <div class="project-details" hidden>
+                            <p class="pd-category" data-i18n="cat_documentary">Documentary</p>
+                            <h3 class="pd-title">Lady Everest</h3>
+                            <dl class="pd-meta">
+                                <div>
+                                    <dt data-i18n="label_studio">Studio</dt>
+                                    <dd>Pixelodeon</dd>
                                 </div>
-                            </div>
-
-                            <!-- BACK -->
-                            <div class="project-card-back">
-
-                                <div class="project-info">
-
-                                    <p class="project-category">DOCUMENTARY</p>
-
-                                    <h3 class="project-name">Lady Everest</h3>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">STUDIO</span>
-                                        <p>Pixelodeon</p>
-                                    </div>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">ROLE</span>
-                                        <p data-i18n="project_role_layout_animator">Layout &amp; Character Animator</p>
-                                    </div>
-
-                                    <div class="project-description-wrapper">
-                                        <span class="project-label">ABOUT THE PROJECT</span>
-                                        <p class="project-description" data-i18n="desc_lady_everest">
-                                            A documentary telling the story of Junko Tabei, the first woman to reach the
-                                            summit of Mount Everest. Combining
-                                            live-action footage and animated sequences, the film brings key moments of
-                                            her extraordinary journey to life. I worked
-                                            on layout and character animation.
-                                        </p>
-                                    </div>
-
+                                <div>
+                                    <dt data-i18n="label_role">Role</dt>
+                                    <dd data-i18n="project_role_layout_animator">Layout &amp; Character Animator</dd>
                                 </div>
-
-                                <div class="project-software">
-                                    <img src="assets/logos/blender.png" alt="Blender" class="software-logo">
+                                <div>
+                                    <dt>Software</dt>
+                                    <dd><span class="software-chip"><img src="assets/logos/blender.png" alt="Blender"
+                                                class="software-logo"></span></dd>
                                 </div>
-
-                            </div>
+                            </dl>
+                            <p class="pd-label" data-i18n="label_about">About the project</p>
+                            <p class="pd-desc" data-i18n="desc_lady_everest">
+                                A documentary telling the story of Junko Tabei, the first woman to reach the summit of
+                                Mount Everest. Combining live-action footage and animated sequences, the film brings key
+                                moments of her extraordinary journey to life. I worked on layout and character animation.
+                            </p>
                         </div>
                     </article>
 
 
                     <!-- 03. SUPERTHINGS RIVALS OF KAZOOM -->
-                    <article class="project-card" tabindex="0" role="button" aria-label="SuperThings Rivals of Kazoom">
-
-                        <div class="project-card-inner">
-
-                            <!-- FRONT -->
-                            <div class="project-card-front">
+                    <article class="project-card reveal">
+                        <button type="button" class="project-trigger" aria-haspopup="dialog">
+                            <span class="project-poster">
                                 <img src="assets/images/projects/superthings-rivals.jpg"
-                                    alt="SuperThings Rivals of Kazoom">
+                                    alt="SuperThings Rivals of Kazoom" loading="lazy">
+                            </span>
+                            <span class="project-view" aria-hidden="true">+</span>
+                            <span class="project-caption">
+                                <span class="project-index">03 · <span data-i18n="cat_series">Animation series</span></span>
+                                <span class="project-title">SuperThings Rivals of Kazoom</span>
+                                <span class="project-studio">Keytoon Animation Studio</span>
+                            </span>
+                        </button>
 
-                                <div class="project-front-caption">
-                                    <span>03 / ANIMATION SERIES</span>
-                                    <h3>SuperThings Rivals of Kazoom</h3>
+                        <div class="project-details" hidden>
+                            <p class="pd-category" data-i18n="cat_series">Animation series</p>
+                            <h3 class="pd-title">SuperThings Rivals of Kazoom</h3>
+                            <dl class="pd-meta">
+                                <div>
+                                    <dt data-i18n="label_studio">Studio</dt>
+                                    <dd>Keytoon Animation Studio</dd>
                                 </div>
-                            </div>
-
-                            <!-- BACK -->
-                            <div class="project-card-back">
-
-                                <div class="project-info">
-
-                                    <p class="project-category">ANIMATION SERIES</p>
-
-                                    <h3 class="project-name">SuperThings Rivals of Kazoom</h3>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">STUDIO</span>
-                                        <p>Keytoon Animation Studio</p>
-                                    </div>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">ROLE</span>
-                                        <p data-i18n="project_role_animator">Character Animator</p>
-                                    </div>
-
-                                    <div class="project-description-wrapper">
-                                        <span class="project-label">ABOUT THE PROJECT</span>
-                                        <p class="project-description" data-i18n="desc_superthings_rivals">
-                                            An animated adventure series set in Kaboom City, a world where everyday
-                                            objects transform into
-                                            superheroes and villains. I worked on character animation, contributing to
-                                            the action and
-                                            personality of its diverse cast of characters.
-                                        </p>
-                                    </div>
-
+                                <div>
+                                    <dt data-i18n="label_role">Role</dt>
+                                    <dd data-i18n="project_role_animator">Character Animator</dd>
                                 </div>
-
-                                <div class="project-software">
-                                    <img src="assets/logos/blender.png" alt="Blender" class="software-logo">
+                                <div>
+                                    <dt>Software</dt>
+                                    <dd><span class="software-chip"><img src="assets/logos/blender.png" alt="Blender"
+                                                class="software-logo"></span></dd>
                                 </div>
-
-                            </div>
+                            </dl>
+                            <p class="pd-label" data-i18n="label_about">About the project</p>
+                            <p class="pd-desc" data-i18n="desc_superthings_rivals">
+                                An animated adventure series set in Kaboom City, a world where everyday objects transform
+                                into superheroes and villains. I worked on character animation, contributing to the
+                                action and personality of its diverse cast of characters.
+                            </p>
                         </div>
                     </article>
 
 
                     <!-- 04. TROTTIES -->
-                    <article class="project-card" tabindex="0" role="button" aria-label="Trotties">
+                    <article class="project-card reveal">
+                        <button type="button" class="project-trigger" aria-haspopup="dialog">
+                            <span class="project-poster">
+                                <img src="assets/images/projects/trotties.jpg" alt="Trotties" loading="lazy">
+                            </span>
+                            <span class="project-view" aria-hidden="true">+</span>
+                            <span class="project-caption">
+                                <span class="project-index">04 · <span data-i18n="cat_series">Animation series</span></span>
+                                <span class="project-title">Trotties</span>
+                                <span class="project-studio">Keytoon Animation Studio</span>
+                            </span>
+                        </button>
 
-                        <div class="project-card-inner">
-
-                            <!-- FRONT -->
-                            <div class="project-card-front">
-                                <img src="assets/images/projects/trotties.jpg" alt="Trotties">
-
-                                <div class="project-front-caption">
-                                    <span>04 / ANIMATION SERIES</span>
-                                    <h3>Trotties</h3>
+                        <div class="project-details" hidden>
+                            <p class="pd-category" data-i18n="cat_series">Animation series</p>
+                            <h3 class="pd-title">Trotties</h3>
+                            <dl class="pd-meta">
+                                <div>
+                                    <dt data-i18n="label_studio">Studio</dt>
+                                    <dd>Keytoon Animation Studio</dd>
                                 </div>
-                            </div>
-
-                            <!-- BACK -->
-                            <div class="project-card-back">
-
-                                <div class="project-info">
-
-                                    <p class="project-category">ANIMATION SERIES</p>
-
-                                    <h3 class="project-name">Trotties</h3>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">STUDIO</span>
-                                        <p>Keytoon Animation Studio</p>
-                                    </div>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">ROLE</span>
-                                        <p data-i18n="project_role_animator">Character Animator</p>
-                                    </div>
-
-                                    <div class="project-description-wrapper">
-                                        <span class="project-label">ABOUT THE PROJECT</span>
-                                        <p class="project-description" data-i18n="desc_trotties">
-                                            An animated series about a group of magical dolls who travel around the
-                                            world, discovering new
-                                            places and experiencing exciting adventures. I contributed to the character
-                                            animation, helping
-                                            bring their personalities and stories to life.
-                                        </p>
-                                    </div>
-
+                                <div>
+                                    <dt data-i18n="label_role">Role</dt>
+                                    <dd data-i18n="project_role_animator">Character Animator</dd>
                                 </div>
-
-                                <div class="project-software">
-                                    <img src="assets/logos/blender.png" alt="Blender" class="software-logo">
+                                <div>
+                                    <dt>Software</dt>
+                                    <dd><span class="software-chip"><img src="assets/logos/blender.png" alt="Blender"
+                                                class="software-logo"></span></dd>
                                 </div>
-
-                            </div>
+                            </dl>
+                            <p class="pd-label" data-i18n="label_about">About the project</p>
+                            <p class="pd-desc" data-i18n="desc_trotties">
+                                An animated series about a group of magical dolls who travel around the world,
+                                discovering new places and experiencing exciting adventures. I contributed to the
+                                character animation, helping bring their personalities and stories to life.
+                            </p>
                         </div>
                     </article>
 
 
                     <!-- 05. BEA'S BLOCK -->
-                    <article class="project-card" tabindex="0" role="button" aria-label="Bea's Block">
+                    <article class="project-card reveal">
+                        <button type="button" class="project-trigger" aria-haspopup="dialog">
+                            <span class="project-poster">
+                                <img src="assets/images/projects/beas-block.jpg" alt="Bea's Block" loading="lazy">
+                            </span>
+                            <span class="project-view" aria-hidden="true">+</span>
+                            <span class="project-caption">
+                                <span class="project-index">05 · <span data-i18n="cat_series">Animation series</span></span>
+                                <span class="project-title">Bea's Block</span>
+                                <span class="project-studio">A Productions</span>
+                            </span>
+                        </button>
 
-                        <div class="project-card-inner">
-
-                            <!-- FRONT -->
-                            <div class="project-card-front">
-                                <img src="assets/images/projects/beas-block.jpg" alt="Bea's Block">
-
-                                <div class="project-front-caption">
-                                    <span>05 / ANIMATION SERIES</span>
-                                    <h3>Bea's Block</h3>
+                        <div class="project-details" hidden>
+                            <p class="pd-category" data-i18n="cat_series">Animation series</p>
+                            <h3 class="pd-title">Bea's Block</h3>
+                            <dl class="pd-meta">
+                                <div>
+                                    <dt data-i18n="label_studio">Studio</dt>
+                                    <dd>A Productions</dd>
                                 </div>
-                            </div>
-
-                            <!-- BACK -->
-                            <div class="project-card-back">
-
-                                <div class="project-info">
-
-                                    <p class="project-category">ANIMATION SERIES</p>
-
-                                    <h3 class="project-name">Bea's Block</h3>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">STUDIO</span>
-                                        <p>A Productions</p>
-                                    </div>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">ROLE</span>
-                                        <p data-i18n="project_role_animator">Character Animator</p>
-                                    </div>
-
-                                    <div class="project-description-wrapper">
-                                        <span class="project-label">ABOUT THE PROJECT</span>
-                                        <p class="project-description" data-i18n="desc_beas_block">
-                                            A preschool animated series produced by Sesame Workshop, set in a colourful
-                                            world where Bea and
-                                            her friends discover the importance of kindness, empathy and helping others.
-                                            I worked on
-                                            character animation, bringing the characters and their everyday adventures
-                                            to life.
-                                        </p>
-                                    </div>
-
+                                <div>
+                                    <dt data-i18n="label_role">Role</dt>
+                                    <dd data-i18n="project_role_animator">Character Animator</dd>
                                 </div>
-
-                                <div class="project-software">
-                                    <img src="assets/logos/3ds-max.png" alt="Autodesk 3ds Max"
-                                        class="software-logo software-logo-3dsmax">
+                                <div>
+                                    <dt>Software</dt>
+                                    <dd><span class="software-chip software-chip--wide"><img
+                                                src="assets/logos/3ds-max.png" alt="Autodesk 3ds Max"
+                                                class="software-logo"></span></dd>
                                 </div>
-
-                            </div>
+                            </dl>
+                            <p class="pd-label" data-i18n="label_about">About the project</p>
+                            <p class="pd-desc" data-i18n="desc_beas_block">
+                                A preschool animated series produced by Sesame Workshop, set in a colourful world where
+                                Bea and her friends discover the importance of kindness, empathy and helping others. I
+                                worked on character animation, bringing the characters and their everyday adventures to
+                                life.
+                            </p>
                         </div>
                     </article>
 
 
                     <!-- 06. FRIENDZSPACE -->
-                    <article class="project-card" tabindex="0" role="button" aria-label="FriendZSpace">
+                    <article class="project-card reveal">
+                        <button type="button" class="project-trigger" aria-haspopup="dialog">
+                            <span class="project-poster">
+                                <img src="assets/images/projects/friendzspace.jpg" alt="FriendZSpace" loading="lazy">
+                            </span>
+                            <span class="project-view" aria-hidden="true">+</span>
+                            <span class="project-caption">
+                                <span class="project-index">06 · <span data-i18n="cat_series">Animation series</span></span>
+                                <span class="project-title">FriendZSpace</span>
+                                <span class="project-studio">Mighty Studio</span>
+                            </span>
+                        </button>
 
-                        <div class="project-card-inner">
-
-                            <!-- FRONT -->
-                            <div class="project-card-front">
-                                <img src="assets/images/projects/friendzspace.jpg" alt="FriendZSpace">
-
-                                <div class="project-front-caption">
-                                    <span>06 / ANIMATION SERIES</span>
-                                    <h3>FriendZSpace</h3>
+                        <div class="project-details" hidden>
+                            <p class="pd-category" data-i18n="cat_series">Animation series</p>
+                            <h3 class="pd-title">FriendZSpace</h3>
+                            <dl class="pd-meta">
+                                <div>
+                                    <dt data-i18n="label_studio">Studio</dt>
+                                    <dd>Mighty Studio</dd>
                                 </div>
-                            </div>
-
-                            <!-- BACK -->
-                            <div class="project-card-back">
-
-                                <div class="project-info">
-
-                                    <p class="project-category">ANIMATION SERIES</p>
-
-                                    <h3 class="project-name">FriendZSpace</h3>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">STUDIO</span>
-                                        <p>Mighty Studio</p>
-                                    </div>
-
-                                    <div class="project-detail">
-                                        <span class="project-label">ROLE</span>
-                                        <p data-i18n="project_role_animator">Character Animator</p>
-                                    </div>
-
-                                    <div class="project-description-wrapper">
-                                        <span class="project-label">ABOUT THE PROJECT</span>
-                                        <p class="project-description" data-i18n="desc_friendzspace">
-                                            An animated comedy-adventure series following three kids who travel through
-                                            space to meet and
-                                            befriend alien children. I worked on character animation across a wide
-                                            variety of characters,
-                                            including humans, non-human bipeds and quadrupeds.
-                                        </p>
-                                    </div>
-
+                                <div>
+                                    <dt data-i18n="label_role">Role</dt>
+                                    <dd data-i18n="project_role_animator">Character Animator</dd>
                                 </div>
-
-                                <div class="project-software">
-                                    <img src="assets/logos/maya.png" alt="Autodesk Maya"
-                                        class="software-logo software-logo-maya">
+                                <div>
+                                    <dt>Software</dt>
+                                    <dd><span class="software-chip software-chip--wide"><img src="assets/logos/maya.png"
+                                                alt="Autodesk Maya" class="software-logo"></span></dd>
                                 </div>
-                            </div>
+                            </dl>
+                            <p class="pd-label" data-i18n="label_about">About the project</p>
+                            <p class="pd-desc" data-i18n="desc_friendzspace">
+                                An animated comedy-adventure series following three kids who travel through space to meet
+                                and befriend alien children. I worked on character animation across a wide variety of
+                                characters, including humans, non-human bipeds and quadrupeds.
+                            </p>
                         </div>
                     </article>
+
                 </div>
             </div>
         </section>
 
-        <!-- 04. CONTACT -->
-        <section id="contact" class="contact-section">
 
-            <div class="contact-container">
+        <!-- =================================
+             04. CONTACT
+        ================================== -->
+        <section id="contact" class="contact">
+            <div class="container contact-container">
 
-                <div class="contact-heading">
-                    <h2 class="contact-title" data-i18n="contact_title">CONTACT</h2>
-                    <p class="contact-subtitle" data-i18n="contact_subtitle">
+                <div class="contact-intro">
+                    <div class="section-kicker reveal">
+                        <span class="kicker-line" aria-hidden="true"></span>
+                        <p data-i18n="contact_eyebrow">Let's work together</p>
+                    </div>
+                    <h2 class="section-title reveal" data-i18n="contact_title">CONTACT</h2>
+                    <p class="contact-subtitle reveal" data-i18n="contact_subtitle">
                         Open to new opportunities and collaborations. Let's connect!
                     </p>
+
+                    <ul class="contact-list reveal">
+                        <li>
+                            <a href="mailto:andreariru3d@gmail.com" class="contact-item">
+                                <span class="contact-icon" aria-hidden="true">✉</span>
+                                <span class="contact-text">
+                                    <span class="contact-label" data-i18n="contact_email_label">EMAIL</span>
+                                    <span class="contact-value">andreariru3d@gmail.com</span>
+                                </span>
+                                <span class="contact-arrow" aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/andrea-arino-ruiz/" target="_blank"
+                                rel="noopener noreferrer" class="contact-item">
+                                <span class="contact-icon contact-icon--text" aria-hidden="true">in</span>
+                                <span class="contact-text">
+                                    <span class="contact-label">LINKEDIN</span>
+                                    <span class="contact-value" data-i18n="contact_linkedin">Let's connect on LinkedIn</span>
+                                    <span class="contact-desc">linkedin.com/in/andrea-arino-ruiz</span>
+                                </span>
+                                <span class="contact-arrow" aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="contact-item contact-item--static">
+                                <span class="contact-icon" aria-hidden="true">⌖</span>
+                                <span class="contact-text">
+                                    <span class="contact-label" data-i18n="contact_location_label">LOCATION &amp; AVAILABILITY</span>
+                                    <span class="contact-value" data-i18n="contact_location">Barcelona, Spain</span>
+                                    <span class="contact-desc" data-i18n="contact_availability">Open to remote opportunities worldwide</span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="contact-grid">
+                <div class="contact-form-card reveal">
+                    <h3 class="contact-form-title" data-i18n="contact_form_title">Send me a message</h3>
 
-                    <!-- LEFT COLUMN -->
-                    <div class="contact-info">
-
-                        <!-- EMAIL -->
-                        <a href="mailto:andreariru3d@gmail.com" class="contact-info-card">
-
-                            <span class="contact-icon">✉</span>
-
-                            <span class="contact-card-label" data-i18n="contact_email_label">
-                                EMAIL
-                            </span>
-
-                            <span class="contact-card-value">
-                                andreariru3d@gmail.com
-                            </span>
-
-                        </a>
-
-                        <!-- LOCATION -->
-                        <div class="contact-info-card">
-
-                            <span class="contact-icon">⌖</span>
-
-                            <span class="contact-card-label" data-i18n="contact_location_label">
-                                LOCATION &amp; AVAILABILITY
-                            </span>
-
-                            <span class="contact-card-value" data-i18n="contact_location">
-                                Barcelona, Spain
-                            </span>
-
-                            <span class="contact-card-description" data-i18n="contact_availability">
-                                Open to remote opportunities worldwide
-                            </span>
-
+                    <form id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name" data-i18n="contact_name_label">Name</label>
+                                <input type="text" id="contact-name" name="name" autocomplete="name"
+                                    data-i18n-placeholder="ph_name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email" data-i18n="contact_form_email_label">Email</label>
+                                <input type="email" id="contact-email" name="email" autocomplete="email"
+                                    data-i18n-placeholder="ph_email" placeholder="you@email.com" required>
+                            </div>
                         </div>
 
-                        <!-- LINKEDIN -->
-                        <a href="https://www.linkedin.com/in/andrea-arino-ruiz/" target="_blank"
-                            rel="noopener noreferrer" class="contact-info-card">
+                        <div class="form-group">
+                            <label for="contact-subject" data-i18n="contact_subject_label">Subject</label>
+                            <input type="text" id="contact-subject" name="subject"
+                                data-i18n-placeholder="ph_subject" placeholder="What's it about?" required>
+                        </div>
 
-                            <span class="contact-icon">in</span>
+                        <div class="form-group">
+                            <label for="contact-message" data-i18n="contact_message_label">Message</label>
+                            <textarea id="contact-message" name="message" rows="5"
+                                data-i18n-placeholder="ph_message" placeholder="Tell me about your project..."
+                                required></textarea>
+                        </div>
 
-                            <span class="contact-card-label">LINKEDIN</span>
+                        <p class="form-error" id="form-error" role="alert" hidden data-i18n="form_error">
+                            Please fill in all fields with a valid email.
+                        </p>
 
-                            <span class="contact-card-value" data-i18n="contact_linkedin">
-                                Let's connect on LinkedIn
-                            </span>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span data-i18n="contact_submit">SEND MESSAGE</span>
+                            <span aria-hidden="true">→</span>
+                        </button>
 
-                            <span class="contact-card-description">
-                                linkedin.com/in/andrea-arino-ruiz/
-                            </span>
-
-                        </a>
-
-                    </div>
-
-
-                    <!-- RIGHT COLUMN: CONTACT FORM -->
-                    <div class="contact-form-card">
-
-                        <h3 class="contact-form-title" data-i18n="contact_form_title">
-                            Send me a message
-                        </h3>
-
-                        <form id="contact-form">
-
-                            <div class="form-group">
-                                <label for="contact-name" data-i18n="contact_name_label">
-                                    Name
-                                </label>
-                                <input type="text" id="contact-name" name="name" placeholder="Your name" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contact-email" data-i18n="contact_form_email_label">
-                                    Email
-                                </label>
-                                <input type="email" id="contact-email" name="email" placeholder="you@email.com"
-                                    required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contact-subject" data-i18n="contact_subject_label">
-                                    Subject
-                                </label>
-                                <input type="text" id="contact-subject" name="subject" placeholder="Subject" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contact-message" data-i18n="contact_message_label">
-                                    Message
-                                </label>
-                                <textarea id="contact-message" name="message"
-                                    placeholder="Tell me about your project..." rows="3" required></textarea>
-                            </div>
-
-                            <button type="submit" class="contact-submit" data-i18n="contact_submit">
-                                SEND MESSAGE
-                            </button>
-
-                        </form>
-
-                    </div>
-
+                        <p class="form-note" data-i18n="form_note">Your email app will open to send the message.</p>
+                    </form>
                 </div>
+
             </div>
         </section>
 
@@ -673,25 +609,39 @@
     <!-- =================================
          FOOTER
     ================================== -->
-
     <footer class="site-footer">
-
-        <div class="footer-container">
-
+        <div class="container footer-container">
             <p>
                 © <span id="current-year"></span> Andrea Ariño Ruiz.
                 <span data-i18n="footer_rights">All rights reserved.</span>
             </p>
-
-            <p data-i18n="footer_role">3D CHARACTER ANIMATOR</p>
-
+            <p class="footer-role" data-i18n="footer_role">3D CHARACTER ANIMATOR</p>
+            <a href="#reel" class="footer-top">
+                <span data-i18n="footer_top">Back to top</span> <span aria-hidden="true">↑</span>
+            </a>
         </div>
-
     </footer>
 
 
+    <!-- =================================
+         PROJECT MODAL
+    ================================== -->
+    <dialog class="project-modal" id="project-modal" aria-labelledby="modal-title">
+        <div class="modal-inner">
+            <button type="button" class="modal-close" id="modal-close" data-i18n-aria="modal_close"
+                aria-label="Close">✕</button>
+
+            <div class="modal-poster">
+                <img src="" alt="" id="modal-poster-img">
+            </div>
+
+            <div class="modal-body" id="modal-body"></div>
+        </div>
+    </dialog>
+
+
     <!-- JAVASCRIPT -->
-    <script src="js/main.js?v=5"></script>
+    <script src="js/main.js?v=7"></script>
 
 </body>
 
