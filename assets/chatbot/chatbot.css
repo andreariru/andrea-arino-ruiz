@@ -132,13 +132,21 @@
     place-items: center;
     width: 40px;
     height: 40px;
-    border-radius: 13px;
-    background: var(--c-magenta);
-    color: var(--c-cream);
+    border-radius: 50%;
+    background: var(--c-cream);
+    color: var(--c-navy);
     font-family: var(--font-display, "Bricolage Grotesque", sans-serif);
     font-weight: 800;
     font-size: 21px;
-    transform: rotate(-6deg);
+    overflow: hidden;
+    box-shadow: 0 0 0 2px var(--c-magenta);
+}
+
+.aar-chat__avatar-img {
+    display: block;
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
 }
 
 .aar-chat__head-text {

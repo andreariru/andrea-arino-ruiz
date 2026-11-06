@@ -27,8 +27,8 @@
         en: {
             launcher: "Ask about Andrea",
             title: "Ask about Andrea",
-            status: "AI assistant",
-            greeting: "Hi! I'm Andrea's AI assistant. Ask me about her experience, projects, education, software or availability.",
+            status: "Rayo AI assistant",
+            greeting: "Hi! I'm Rayo, Andrea's AI assistant. Ask me about her experience, projects, education, software or availability.",
             placeholder: "Type your question…",
             send: "Send",
             close: "Close chat",
@@ -49,8 +49,8 @@
         es: {
             launcher: "Pregunta sobre Andrea",
             title: "Pregunta sobre Andrea",
-            status: "Asistente de IA",
-            greeting: "¡Hola! Soy el asistente de IA de Andrea. Pregúntame por su experiencia, proyectos, formación, software o disponibilidad.",
+            status: "Rayo, asistente de IA",
+            greeting: "¡Hola! Soy Rayo, el asistente de IA de Andrea. Pregúntame por su experiencia, proyectos, formación, software o disponibilidad.",
             placeholder: "Escribe tu pregunta…",
             send: "Enviar",
             close: "Cerrar chat",
@@ -71,8 +71,8 @@
         ca: {
             launcher: "Pregunta sobre l'Andrea",
             title: "Pregunta sobre l'Andrea",
-            status: "Assistent d'IA",
-            greeting: "Hola! Sóc l'assistent d'IA de l'Andrea. Pregunta'm per la seva experiència, projectes, formació, programari o disponibilitat.",
+            status: "Rayo, assistent d'IA",
+            greeting: "Hola! Sóc en Rayo, l'assistent d'IA de l'Andrea. Pregunta'm per la seva experiència, projectes, formació, programari o disponibilitat.",
             placeholder: "Escriu la teva pregunta…",
             send: "Envia",
             close: "Tanca el xat",
@@ -146,7 +146,11 @@
     // Header
     const header = el("header", "aar-chat__header");
     const avatar = el("span", "aar-chat__avatar", { "aria-hidden": "true" });
-    avatar.textContent = "A";
+    // Rayo's icon lives next to this script (assets/chatbot/rayo.png)
+    const avatarImg = el("img", "aar-chat__avatar-img", { alt: "", width: "40", height: "40" });
+    avatarImg.src = new URL("rayo.png", (script && script.src) || location.href).href;
+    avatarImg.addEventListener("error", () => { avatarImg.remove(); avatar.textContent = "R"; });
+    avatar.append(avatarImg);
     const headText = el("div", "aar-chat__head-text");
     const title = el("p", "aar-chat__title");
     const status = el("p", "aar-chat__status");
