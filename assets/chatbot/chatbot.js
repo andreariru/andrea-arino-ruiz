@@ -18,7 +18,7 @@
     const STORAGE_KEY = "aar-chat-history";
     const MAX_CONTEXT = 8;        // messages sent to the backend
     const MAX_INPUT = 500;
-    const REQUEST_TIMEOUT_MS = 35000;
+    const REQUEST_TIMEOUT_MS = 65000;
 
     /* ---------------------------------------------------------
        Texts
